@@ -505,6 +505,7 @@ class NavbarComponent {
     }
     logout() {
         this.auth.logout();
+        this.userStatus = 'offline';
     }
 }
 NavbarComponent.ɵfac = function NavbarComponent_Factory(t) { return new (t || NavbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"])); };
